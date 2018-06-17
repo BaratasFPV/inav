@@ -38,8 +38,10 @@
 #define SPI2_MOSI_PIN           PB15
 
 #define USE_I2C
-#define USE_I2C_DEVICE_2        // Flex port - SCL/PB10, SDA/PB11
-#define I2C_DEVICE_2_SHARES_UART3
+#define USE_I2C_DEVICE_2        // Main port - SCL/PA9, SDA/PA10
+#define I2C_DEVICE_2_SHARES_UART1
+#define I2C2_SCL                PA9
+#define I2C2_SDA                PA10
 
 #define MPU6000_CS_PIN          PA4
 #define MPU6000_SPI_BUS         BUS_SPI1
@@ -75,6 +77,9 @@
 #define USE_UART3
 
 #define SERIAL_PORT_COUNT 3
+
+#define UART1_RX_PIN            PA10
+#define UART1_TX_PIN            PA9
 
 #define UART3_RX_PIN            PB11
 #define UART3_TX_PIN            PB10

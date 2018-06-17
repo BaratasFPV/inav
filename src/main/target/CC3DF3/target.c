@@ -16,8 +16,8 @@
  */
 
 #include <stdint.h>
-
 #include <platform.h>
+
 #include "drivers/io.h"
 #include "drivers/pwm_mapping.h"
 #include "drivers/timer.h"
